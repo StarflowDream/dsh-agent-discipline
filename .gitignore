@@ -2,3 +2,6 @@ node_modules/
 *.tgz
 *.log
 .DS_Store
+
+# 元判据跑出来的临时坏样本仓（每次跑重新生成）
+.discrimination/
