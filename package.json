@@ -1,0 +1,48 @@
+{
+  "name": "dsh-agent-discipline",
+  "version": "0.1.0",
+  "description": "把「判据先行、坏样本先证明会失败、返工记账」这套工程纪律做成可运行的东西：判据运行器 + 元判据（每条判据必须先用坏样本证明它会红）+ 能力账本口径 + 行为层四层分工文档 + 一份自写的行为层示例条文。",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "agent",
+    "discipline",
+    "criteria",
+    "verification",
+    "behavior-layer",
+    "agent-team"
+  ],
+  "type": "module",
+  "main": "lib/runner.mjs",
+  "exports": {
+    ".": "./lib/runner.mjs",
+    "./discrimination": "./lib/discrimination.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "checks",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "check": "node lib/runner.mjs --dir checks",
+    "test": "node lib/runner.mjs --dir checks"
+  },
+  "license": "MIT",
+  "author": "StarflowDream",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarflowDream/dsh-agent-discipline.git"
+  },
+  "homepage": "https://github.com/StarflowDream/dsh-agent-discipline#readme",
+  "bugs": {
+    "url": "https://github.com/StarflowDream/dsh-agent-discipline/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
